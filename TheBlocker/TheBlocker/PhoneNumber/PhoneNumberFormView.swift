@@ -41,7 +41,7 @@ struct PhoneNumberForm: View {
                                 get: { $0.userInput },
                                 send: { PhoneNumberFormAction.inputChanged($0) }
                             )
-                        ).keyboardType(.numberPad)
+                        )
                     }
                     // MARK: Submit button
                     Button(action: { viewStore.send(PhoneNumberFormAction.submitted) }) {

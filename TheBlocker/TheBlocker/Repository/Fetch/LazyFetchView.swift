@@ -17,6 +17,7 @@ struct LazyFetch<Model: UnmanagedModel>: View {
                 HStack {
                     Spacer()
                     ProgressView()
+                        .frame(width: 50, height: 50, alignment: .center/*@END_MENU_TOKEN@*/)
                     Spacer()
                 }
             }
@@ -26,6 +27,7 @@ struct LazyFetch<Model: UnmanagedModel>: View {
                     Spacer()
                     if viewStore.isFetching {
                         ProgressView()
+                            .frame(width: 50, height: 50, alignment: .center/*@END_MENU_TOKEN@*/)
                     }
                     Spacer()
                 }

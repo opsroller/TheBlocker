@@ -19,7 +19,7 @@ struct BulkGen: View {
                 TextField("Quantity", text: viewStore.binding(
                     get: { $0.quantityToGenerateAsString },
                     send: BulkGenAction.quantityChanged)
-                ).keyboardType(.numberPad)
+                )
                 // MARK: Generate button
                 Button(action: { viewStore.send(.generate) }) {
                     generateButtonLabel(status: viewStore.status)

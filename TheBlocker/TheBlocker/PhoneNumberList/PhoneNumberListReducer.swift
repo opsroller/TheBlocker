@@ -56,7 +56,8 @@ let phoneNumberListReducer = Reducer<PhoneNumberListState, PhoneNumberListAction
                 switch result {
                 case let .success(.delete(id)):
                     state.fetchRepo.items.removeAll(where: { $0.id == id })
-                    return .none
+                    return Effect(value: PhoneNumberListAction
+                                    .aggregateRepo(.count(state.aggregateRepo.fetchRequest(predicate: state.predicate))))
                 default:
                     return .none
                 }
