@@ -1,0 +1,1273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4927ADF525B6434400E55B08 /* UserDefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927ADF425B6434400E55B08 /* UserDefaultRepository.swift */; };
+		4927ADFE25B6440600E55B08 /* UserDefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927ADF425B6434400E55B08 /* UserDefaultRepository.swift */; };
+		4927AE0425B6455D00E55B08 /* DefaultName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927AE0325B6455D00E55B08 /* DefaultName.swift */; };
+		4927AE0925B6458000E55B08 /* DefaultName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927AE0325B6455D00E55B08 /* DefaultName.swift */; };
+		4927AE0F25B649C900E55B08 /* UserDefaultsRepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927AE0E25B649C900E55B08 /* UserDefaultsRepositoryClient.swift */; };
+		4927AE1425B64C5E00E55B08 /* UserDefaultsRepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927AE0E25B649C900E55B08 /* UserDefaultsRepositoryClient.swift */; };
+		494A80CB25B24C02002893C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A80CA25B24C02002893C8 /* AppDelegate.swift */; };
+		494A80CD25B24C02002893C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A80CC25B24C02002893C8 /* SceneDelegate.swift */; };
+		494A80D225B24C02002893C8 /* TheBlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 494A80D025B24C02002893C8 /* TheBlocker.xcdatamodeld */; };
+		494A80D425B24C03002893C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494A80D325B24C03002893C8 /* Assets.xcassets */; };
+		494A80D725B24C03002893C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494A80D625B24C03002893C8 /* Preview Assets.xcassets */; };
+		494A80DA25B24C03002893C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494A80D825B24C03002893C8 /* LaunchScreen.storyboard */; };
+		494A80E525B24C03002893C8 /* TheBlockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A80E425B24C03002893C8 /* TheBlockerTests.swift */; };
+		494A80F025B24C03002893C8 /* TheBlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A80EF25B24C03002893C8 /* TheBlockerUITests.swift */; };
+		494A811425B25099002893C8 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A811325B25099002893C8 /* CallDirectoryHandler.swift */; };
+		494A811825B25099002893C8 /* CallKitExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 494A811125B25099002893C8 /* CallKitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		494A812325B250D3002893C8 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A812225B250D3002893C8 /* Stack.swift */; };
+		494A812925B25120002893C8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A812825B25120002893C8 /* Repository.swift */; };
+		494A813025B25204002893C8 /* BundleIdentifierProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A812F25B25204002893C8 /* BundleIdentifierProvider.swift */; };
+		494A813F25B257B7002893C8 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A813E25B257B7002893C8 /* PhoneNumber.swift */; };
+		494A814625B25B24002893C8 /* PhoneNumberListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A814525B25B24002893C8 /* PhoneNumberListState.swift */; };
+		494A814C25B25B2E002893C8 /* PhoneNumberListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A814B25B25B2E002893C8 /* PhoneNumberListAction.swift */; };
+		494A815225B25B50002893C8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A815125B25B50002893C8 /* AppState.swift */; };
+		494A815825B25B58002893C8 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A815725B25B58002893C8 /* AppAction.swift */; };
+		494A815F25B25C0D002893C8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 494A815E25B25C0D002893C8 /* ComposableArchitecture */; };
+		494A816525B25C65002893C8 /* ModelBridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A816425B25C65002893C8 /* ModelBridging.swift */; };
+		494A816B25B25CC6002893C8 /* RepositoryPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A816A25B25CC6002893C8 /* RepositoryPhoneNumber.swift */; };
+		494A817625B26751002893C8 /* BulkGenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A817525B26751002893C8 /* BulkGenState.swift */; };
+		494A817C25B26778002893C8 /* BulkGenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A817B25B26778002893C8 /* BulkGenAction.swift */; };
+		494A818325B2684B002893C8 /* FetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A818225B2684B002893C8 /* FetchRepository.swift */; };
+		494A818925B26857002893C8 /* FetchRepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A818825B26857002893C8 /* FetchRepositoryClient.swift */; };
+		494A818F25B26861002893C8 /* FetchRepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A818E25B26861002893C8 /* FetchRepositoryState.swift */; };
+		494A819525B2686B002893C8 /* FetchRepositoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A819425B2686B002893C8 /* FetchRepositoryAction.swift */; };
+		494A819B25B2687D002893C8 /* FetchRepositoryReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A819A25B2687D002893C8 /* FetchRepositoryReducer.swift */; };
+		494A81A125B26885002893C8 /* FetchRepositoryEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81A025B26885002893C8 /* FetchRepositoryEnv.swift */; };
+		494A81A825B268C4002893C8 /* CRUDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81A725B268C4002893C8 /* CRUDRepository.swift */; };
+		494A81AE25B268D0002893C8 /* CRUDRepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81AD25B268D0002893C8 /* CRUDRepositoryClient.swift */; };
+		494A81BA25B268E8002893C8 /* CRUDRepositoryReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81B925B268E8002893C8 /* CRUDRepositoryReducer.swift */; };
+		494A81C025B268F1002893C8 /* CRUDRepositoryEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81BF25B268F1002893C8 /* CRUDRepositoryEnv.swift */; };
+		494A81C625B2691D002893C8 /* CRUDRepositoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81C525B2691D002893C8 /* CRUDRepositoryAction.swift */; };
+		494A81E025B3453C002893C8 /* CRUDRepository+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81DF25B3453C002893C8 /* CRUDRepository+Effect.swift */; };
+		494A81EA25B34A36002893C8 /* CRUDRepositoryClient+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81E925B34A36002893C8 /* CRUDRepositoryClient+Effect.swift */; };
+		494A81F425B35581002893C8 /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81F325B35581002893C8 /* FetchRequest.swift */; };
+		494A81FA25B35588002893C8 /* FetchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81F925B35588002893C8 /* FetchResponse.swift */; };
+		494A820025B37811002893C8 /* FetchRepository+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81FF25B37811002893C8 /* FetchRepository+Subscription.swift */; };
+		494A820A25B387C8002893C8 /* FetchRepositoryClient+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A820925B387C8002893C8 /* FetchRepositoryClient+Effect.swift */; };
+		494A821025B3882F002893C8 /* FetchRepository+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A820F25B3882F002893C8 /* FetchRepository+Effect.swift */; };
+		494A821E25B394B2002893C8 /* PhoneNumberFormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A821D25B394B2002893C8 /* PhoneNumberFormState.swift */; };
+		494A822425B39508002893C8 /* PhoneNumberFormAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A822325B39508002893C8 /* PhoneNumberFormAction.swift */; };
+		494A822A25B39726002893C8 /* PhoneNumberFormReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A822925B39726002893C8 /* PhoneNumberFormReducer.swift */; };
+		494A823825B39CD8002893C8 /* PhoneNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A823725B39CD8002893C8 /* PhoneNumberGenerator.swift */; };
+		494A824C25B3D055002893C8 /* PhoneNumberGeneratorClient+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A824B25B3D055002893C8 /* PhoneNumberGeneratorClient+Effect.swift */; };
+		494A825225B3D0B0002893C8 /* PhoneNumberGenerator+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A825125B3D0B0002893C8 /* PhoneNumberGenerator+Effect.swift */; };
+		494A825D25B3D4B4002893C8 /* BatchInsertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A825C25B3D4B4002893C8 /* BatchInsertRepository.swift */; };
+		494A826325B3E36A002893C8 /* BatchInsertRepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A826225B3E36A002893C8 /* BatchInsertRepositoryClient.swift */; };
+		494A826E25B48601002893C8 /* PhoneNumberGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A826D25B48601002893C8 /* PhoneNumberGeneratorTests.swift */; };
+		494A827825B4A74C002893C8 /* PhoneNumberGenerator+RepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A827725B4A74C002893C8 /* PhoneNumberGenerator+RepositoryClient.swift */; };
+		494A828625B4EB70002893C8 /* BulkGenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A828525B4EB70002893C8 /* BulkGenReducer.swift */; };
+		494A828C25B4EBA1002893C8 /* BulkGenEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A828B25B4EBA1002893C8 /* BulkGenEnv.swift */; };
+		494A829E25B4F9C5002893C8 /* PhoneNumberListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A829D25B4F9C5002893C8 /* PhoneNumberListReducer.swift */; };
+		494A82A425B4FA1A002893C8 /* PhoneNumberListEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82A325B4FA19002893C8 /* PhoneNumberListEnv.swift */; };
+		494A82AA25B4FB74002893C8 /* BulkGenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82A925B4FB74002893C8 /* BulkGenView.swift */; };
+		494A82B025B4FD0C002893C8 /* PhoneNumberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82AF25B4FD0C002893C8 /* PhoneNumberListView.swift */; };
+		494A82B625B4FF67002893C8 /* LazyFetchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82B525B4FF67002893C8 /* LazyFetchView.swift */; };
+		494A82C325B50DA9002893C8 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82C225B50DA9002893C8 /* AppReducer.swift */; };
+		494A82C925B50DCE002893C8 /* AppEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82C825B50DCE002893C8 /* AppEnv.swift */; };
+		494A82CF25B517DD002893C8 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82CE25B517DD002893C8 /* AppViewController.swift */; };
+		494A82DD25B54C7C002893C8 /* PhoneNumberFormEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82DC25B54C7C002893C8 /* PhoneNumberFormEnv.swift */; };
+		494A82E325B55406002893C8 /* CRUDRepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82E225B55406002893C8 /* CRUDRepositoryState.swift */; };
+		494A82E925B554F6002893C8 /* PhoneNumberFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A82E825B554F6002893C8 /* PhoneNumberFormView.swift */; };
+		4996CD9125B77D15006BC8D2 /* CallKitState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996CD9025B77D15006BC8D2 /* CallKitState.swift */; };
+		4996CD9725B77D1C006BC8D2 /* CallKitAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996CD9625B77D1C006BC8D2 /* CallKitAction.swift */; };
+		4996CD9D25B77D2B006BC8D2 /* CallKitReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996CD9C25B77D2B006BC8D2 /* CallKitReducer.swift */; };
+		4996CDA325B77D33006BC8D2 /* CallKitEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996CDA225B77D33006BC8D2 /* CallKitEnv.swift */; };
+		4996CDA925B78155006BC8D2 /* CallKitEnabledStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996CDA825B78155006BC8D2 /* CallKitEnabledStatusView.swift */; };
+		4996CDB025B78790006BC8D2 /* RepositoryStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996CDAF25B78790006BC8D2 /* RepositoryStack.swift */; };
+		49D36F6525B6029B00D0C754 /* FetchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A818225B2684B002893C8 /* FetchRepository.swift */; };
+		49D36F6A25B602A600D0C754 /* FetchRepositoryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A818825B26857002893C8 /* FetchRepositoryClient.swift */; };
+		49D36F6F25B602C400D0C754 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A812825B25120002893C8 /* Repository.swift */; };
+		49D36F7425B602CB00D0C754 /* ModelBridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A816425B25C65002893C8 /* ModelBridging.swift */; };
+		49D36F7925B602D500D0C754 /* RepositoryPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A816A25B25CC6002893C8 /* RepositoryPhoneNumber.swift */; };
+		49D36F7E25B602DB00D0C754 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A813E25B257B7002893C8 /* PhoneNumber.swift */; };
+		49D36F8325B602DF00D0C754 /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81F325B35581002893C8 /* FetchRequest.swift */; };
+		49D36F8825B602E300D0C754 /* FetchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81F925B35588002893C8 /* FetchResponse.swift */; };
+		49D36F8D25B6030800D0C754 /* FetchRepository+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A81FF25B37811002893C8 /* FetchRepository+Subscription.swift */; };
+		49D36F9225B603BF00D0C754 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A812225B250D3002893C8 /* Stack.swift */; };
+		49D36F9825B6068E00D0C754 /* CallKitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F9725B6068E00D0C754 /* CallKitRepository.swift */; };
+		49D36FA225B60CAB00D0C754 /* BundleIdentifierProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A812F25B25204002893C8 /* BundleIdentifierProvider.swift */; };
+		49D36FA925B61BB200D0C754 /* CallKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FA825B61BB200D0C754 /* CallKitService.swift */; };
+		49D36FBA25B62F9800D0C754 /* TheBlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 494A80D025B24C02002893C8 /* TheBlocker.xcdatamodeld */; };
+		49D36FC525B6839300D0C754 /* AddNewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FC425B6839300D0C754 /* AddNewState.swift */; };
+		49D36FCB25B6839800D0C754 /* AddNewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FCA25B6839800D0C754 /* AddNewAction.swift */; };
+		49D36FD125B683A600D0C754 /* AddNewReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FD025B683A600D0C754 /* AddNewReducer.swift */; };
+		49D36FD725B683AB00D0C754 /* AddNewEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FD625B683AB00D0C754 /* AddNewEnv.swift */; };
+		49D36FDD25B683BC00D0C754 /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FDC25B683BC00D0C754 /* AddNewView.swift */; };
+		49D36FE325B6863400D0C754 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FE225B6863400D0C754 /* AddNewViewController.swift */; };
+		49D36FE925B6910C00D0C754 /* PhoneNumberListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FE825B6910C00D0C754 /* PhoneNumberListController.swift */; };
+		49D36FEF25B6943F00D0C754 /* PhoneNumberListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FEE25B6943F00D0C754 /* PhoneNumberListCellView.swift */; };
+		49D36FFA25B6A43C00D0C754 /* AggregateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FF925B6A43C00D0C754 /* AggregateRepository.swift */; };
+		49D3700025B6A68600D0C754 /* AggregateRepository+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36FFF25B6A68600D0C754 /* AggregateRepository+Effect.swift */; };
+		49D3700625B6A70D00D0C754 /* AggregateRepositoryClient+Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3700525B6A70D00D0C754 /* AggregateRepositoryClient+Effect.swift */; };
+		49D3700C25B6A7B000D0C754 /* AggregateRepositoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3700B25B6A7B000D0C754 /* AggregateRepositoryState.swift */; };
+		49D3701225B6A7DC00D0C754 /* AggregateRepositoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3701125B6A7DC00D0C754 /* AggregateRepositoryAction.swift */; };
+		49D3701825B6A88E00D0C754 /* AggregateRepositoryEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3701725B6A88E00D0C754 /* AggregateRepositoryEnv.swift */; };
+		49D3701E25B6A8D200D0C754 /* AggregateRepositoryReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3701D25B6A8D200D0C754 /* AggregateRepositoryReducer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		494A80E125B24C03002893C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494A80BF25B24C01002893C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 494A80C625B24C02002893C8;
+			remoteInfo = TheBlocker;
+		};
+		494A80EC25B24C03002893C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494A80BF25B24C01002893C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 494A80C625B24C02002893C8;
+			remoteInfo = TheBlocker;
+		};
+		494A811625B25099002893C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494A80BF25B24C01002893C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 494A811025B25099002893C8;
+			remoteInfo = CallKitExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		494A811C25B25099002893C8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				494A811825B25099002893C8 /* CallKitExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4927ADF425B6434400E55B08 /* UserDefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultRepository.swift; sourceTree = "<group>"; };
+		4927AE0325B6455D00E55B08 /* DefaultName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultName.swift; sourceTree = "<group>"; };
+		4927AE0E25B649C900E55B08 /* UserDefaultsRepositoryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepositoryClient.swift; sourceTree = "<group>"; };
+		494A80C725B24C02002893C8 /* TheBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A80CA25B24C02002893C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		494A80CC25B24C02002893C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		494A80D125B24C02002893C8 /* TheBlocker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheBlocker.xcdatamodel; sourceTree = "<group>"; };
+		494A80D325B24C03002893C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		494A80D625B24C03002893C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		494A80D925B24C03002893C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		494A80DB25B24C03002893C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494A80E025B24C03002893C8 /* TheBlockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBlockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A80E425B24C03002893C8 /* TheBlockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBlockerTests.swift; sourceTree = "<group>"; };
+		494A80E625B24C03002893C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494A80EB25B24C03002893C8 /* TheBlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBlockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A80EF25B24C03002893C8 /* TheBlockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBlockerUITests.swift; sourceTree = "<group>"; };
+		494A80F125B24C03002893C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494A810925B2504F002893C8 /* TheBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheBlocker.entitlements; sourceTree = "<group>"; };
+		494A811125B25099002893C8 /* CallKitExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallKitExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A811325B25099002893C8 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		494A811525B25099002893C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494A812225B250D3002893C8 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		494A812825B25120002893C8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		494A812F25B25204002893C8 /* BundleIdentifierProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleIdentifierProvider.swift; sourceTree = "<group>"; };
+		494A813E25B257B7002893C8 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		494A814525B25B24002893C8 /* PhoneNumberListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberListState.swift; sourceTree = "<group>"; };
+		494A814B25B25B2E002893C8 /* PhoneNumberListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberListAction.swift; sourceTree = "<group>"; };
+		494A815125B25B50002893C8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		494A815725B25B58002893C8 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		494A816425B25C65002893C8 /* ModelBridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBridging.swift; sourceTree = "<group>"; };
+		494A816A25B25CC6002893C8 /* RepositoryPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPhoneNumber.swift; sourceTree = "<group>"; };
+		494A817525B26751002893C8 /* BulkGenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkGenState.swift; sourceTree = "<group>"; };
+		494A817B25B26778002893C8 /* BulkGenAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkGenAction.swift; sourceTree = "<group>"; };
+		494A818225B2684B002893C8 /* FetchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepository.swift; sourceTree = "<group>"; };
+		494A818825B26857002893C8 /* FetchRepositoryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoryClient.swift; sourceTree = "<group>"; };
+		494A818E25B26861002893C8 /* FetchRepositoryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoryState.swift; sourceTree = "<group>"; };
+		494A819425B2686B002893C8 /* FetchRepositoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoryAction.swift; sourceTree = "<group>"; };
+		494A819A25B2687D002893C8 /* FetchRepositoryReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoryReducer.swift; sourceTree = "<group>"; };
+		494A81A025B26885002893C8 /* FetchRepositoryEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoryEnv.swift; sourceTree = "<group>"; };
+		494A81A725B268C4002893C8 /* CRUDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDRepository.swift; sourceTree = "<group>"; };
+		494A81AD25B268D0002893C8 /* CRUDRepositoryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDRepositoryClient.swift; sourceTree = "<group>"; };
+		494A81B925B268E8002893C8 /* CRUDRepositoryReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDRepositoryReducer.swift; sourceTree = "<group>"; };
+		494A81BF25B268F1002893C8 /* CRUDRepositoryEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDRepositoryEnv.swift; sourceTree = "<group>"; };
+		494A81C525B2691D002893C8 /* CRUDRepositoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDRepositoryAction.swift; sourceTree = "<group>"; };
+		494A81DF25B3453C002893C8 /* CRUDRepository+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CRUDRepository+Effect.swift"; sourceTree = "<group>"; };
+		494A81E925B34A36002893C8 /* CRUDRepositoryClient+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CRUDRepositoryClient+Effect.swift"; sourceTree = "<group>"; };
+		494A81F325B35581002893C8 /* FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequest.swift; sourceTree = "<group>"; };
+		494A81F925B35588002893C8 /* FetchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchResponse.swift; sourceTree = "<group>"; };
+		494A81FF25B37811002893C8 /* FetchRepository+Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchRepository+Subscription.swift"; sourceTree = "<group>"; };
+		494A820925B387C8002893C8 /* FetchRepositoryClient+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchRepositoryClient+Effect.swift"; sourceTree = "<group>"; };
+		494A820F25B3882F002893C8 /* FetchRepository+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchRepository+Effect.swift"; sourceTree = "<group>"; };
+		494A821D25B394B2002893C8 /* PhoneNumberFormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormState.swift; sourceTree = "<group>"; };
+		494A822325B39508002893C8 /* PhoneNumberFormAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormAction.swift; sourceTree = "<group>"; };
+		494A822925B39726002893C8 /* PhoneNumberFormReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormReducer.swift; sourceTree = "<group>"; };
+		494A823725B39CD8002893C8 /* PhoneNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberGenerator.swift; sourceTree = "<group>"; };
+		494A824B25B3D055002893C8 /* PhoneNumberGeneratorClient+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumberGeneratorClient+Effect.swift"; sourceTree = "<group>"; };
+		494A825125B3D0B0002893C8 /* PhoneNumberGenerator+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumberGenerator+Effect.swift"; sourceTree = "<group>"; };
+		494A825C25B3D4B4002893C8 /* BatchInsertRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchInsertRepository.swift; sourceTree = "<group>"; };
+		494A826225B3E36A002893C8 /* BatchInsertRepositoryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchInsertRepositoryClient.swift; sourceTree = "<group>"; };
+		494A826D25B48601002893C8 /* PhoneNumberGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberGeneratorTests.swift; sourceTree = "<group>"; };
+		494A827725B4A74C002893C8 /* PhoneNumberGenerator+RepositoryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneNumberGenerator+RepositoryClient.swift"; sourceTree = "<group>"; };
+		494A828525B4EB70002893C8 /* BulkGenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkGenReducer.swift; sourceTree = "<group>"; };
+		494A828B25B4EBA1002893C8 /* BulkGenEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkGenEnv.swift; sourceTree = "<group>"; };
+		494A829D25B4F9C5002893C8 /* PhoneNumberListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberListReducer.swift; sourceTree = "<group>"; };
+		494A82A325B4FA19002893C8 /* PhoneNumberListEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberListEnv.swift; sourceTree = "<group>"; };
+		494A82A925B4FB74002893C8 /* BulkGenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkGenView.swift; sourceTree = "<group>"; };
+		494A82AF25B4FD0C002893C8 /* PhoneNumberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberListView.swift; sourceTree = "<group>"; };
+		494A82B525B4FF67002893C8 /* LazyFetchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyFetchView.swift; sourceTree = "<group>"; };
+		494A82C225B50DA9002893C8 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		494A82C825B50DCE002893C8 /* AppEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnv.swift; sourceTree = "<group>"; };
+		494A82CE25B517DD002893C8 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		494A82DC25B54C7C002893C8 /* PhoneNumberFormEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormEnv.swift; sourceTree = "<group>"; };
+		494A82E225B55406002893C8 /* CRUDRepositoryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDRepositoryState.swift; sourceTree = "<group>"; };
+		494A82E825B554F6002893C8 /* PhoneNumberFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormView.swift; sourceTree = "<group>"; };
+		4996CD9025B77D15006BC8D2 /* CallKitState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitState.swift; sourceTree = "<group>"; };
+		4996CD9625B77D1C006BC8D2 /* CallKitAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitAction.swift; sourceTree = "<group>"; };
+		4996CD9C25B77D2B006BC8D2 /* CallKitReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitReducer.swift; sourceTree = "<group>"; };
+		4996CDA225B77D33006BC8D2 /* CallKitEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitEnv.swift; sourceTree = "<group>"; };
+		4996CDA825B78155006BC8D2 /* CallKitEnabledStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitEnabledStatusView.swift; sourceTree = "<group>"; };
+		4996CDAF25B78790006BC8D2 /* RepositoryStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryStack.swift; sourceTree = "<group>"; };
+		49D36F9725B6068E00D0C754 /* CallKitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitRepository.swift; sourceTree = "<group>"; };
+		49D36F9D25B60C6100D0C754 /* CallKitExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallKitExtension.entitlements; sourceTree = "<group>"; };
+		49D36FA825B61BB200D0C754 /* CallKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitService.swift; sourceTree = "<group>"; };
+		49D36FC425B6839300D0C754 /* AddNewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewState.swift; sourceTree = "<group>"; };
+		49D36FCA25B6839800D0C754 /* AddNewAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAction.swift; sourceTree = "<group>"; };
+		49D36FD025B683A600D0C754 /* AddNewReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewReducer.swift; sourceTree = "<group>"; };
+		49D36FD625B683AB00D0C754 /* AddNewEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEnv.swift; sourceTree = "<group>"; };
+		49D36FDC25B683BC00D0C754 /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
+		49D36FE225B6863400D0C754 /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		49D36FE825B6910C00D0C754 /* PhoneNumberListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberListController.swift; sourceTree = "<group>"; };
+		49D36FEE25B6943F00D0C754 /* PhoneNumberListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberListCellView.swift; sourceTree = "<group>"; };
+		49D36FF925B6A43C00D0C754 /* AggregateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRepository.swift; sourceTree = "<group>"; };
+		49D36FFF25B6A68600D0C754 /* AggregateRepository+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AggregateRepository+Effect.swift"; sourceTree = "<group>"; };
+		49D3700525B6A70D00D0C754 /* AggregateRepositoryClient+Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AggregateRepositoryClient+Effect.swift"; sourceTree = "<group>"; };
+		49D3700B25B6A7B000D0C754 /* AggregateRepositoryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRepositoryState.swift; sourceTree = "<group>"; };
+		49D3701125B6A7DC00D0C754 /* AggregateRepositoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRepositoryAction.swift; sourceTree = "<group>"; };
+		49D3701725B6A88E00D0C754 /* AggregateRepositoryEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRepositoryEnv.swift; sourceTree = "<group>"; };
+		49D3701D25B6A8D200D0C754 /* AggregateRepositoryReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRepositoryReducer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		494A80C425B24C02002893C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494A815F25B25C0D002893C8 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A80DD25B24C03002893C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A80E825B24C03002893C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A810E25B25099002893C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4927ADF325B6432E00E55B08 /* UserDefaultsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				4927ADF425B6434400E55B08 /* UserDefaultRepository.swift */,
+				4927AE0325B6455D00E55B08 /* DefaultName.swift */,
+				4927AE0E25B649C900E55B08 /* UserDefaultsRepositoryClient.swift */,
+			);
+			path = UserDefaultsRepository;
+			sourceTree = "<group>";
+		};
+		494A80BE25B24C01002893C8 = {
+			isa = PBXGroup;
+			children = (
+				494A80C925B24C02002893C8 /* TheBlocker */,
+				494A80E325B24C03002893C8 /* TheBlockerTests */,
+				494A80EE25B24C03002893C8 /* TheBlockerUITests */,
+				494A811225B25099002893C8 /* CallKitExtension */,
+				494A80C825B24C02002893C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		494A80C825B24C02002893C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494A80C725B24C02002893C8 /* TheBlocker.app */,
+				494A80E025B24C03002893C8 /* TheBlockerTests.xctest */,
+				494A80EB25B24C03002893C8 /* TheBlockerUITests.xctest */,
+				494A811125B25099002893C8 /* CallKitExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		494A80C925B24C02002893C8 /* TheBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				49D36FC325B6837200D0C754 /* AddNew */,
+				4927ADF325B6432E00E55B08 /* UserDefaultsRepository */,
+				49D36FA725B61B4500D0C754 /* CallKitService */,
+				494A80D025B24C02002893C8 /* TheBlocker.xcdatamodeld */,
+				494A817425B26743002893C8 /* BulkGen */,
+				494A814425B25A7C002893C8 /* PhoneNumberList */,
+				494A813D25B257A8002893C8 /* PhoneNumber */,
+				494A812E25B251A7002893C8 /* App */,
+				494A812125B250BD002893C8 /* Repository */,
+				494A810925B2504F002893C8 /* TheBlocker.entitlements */,
+				494A80D325B24C03002893C8 /* Assets.xcassets */,
+				494A80D825B24C03002893C8 /* LaunchScreen.storyboard */,
+				494A80DB25B24C03002893C8 /* Info.plist */,
+				494A80D525B24C03002893C8 /* Preview Content */,
+			);
+			path = TheBlocker;
+			sourceTree = "<group>";
+		};
+		494A80D525B24C03002893C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				494A80D625B24C03002893C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		494A80E325B24C03002893C8 /* TheBlockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4996CDAE25B78772006BC8D2 /* Repository */,
+				494A826C25B485E3002893C8 /* BulkGen */,
+				494A80E425B24C03002893C8 /* TheBlockerTests.swift */,
+				494A80E625B24C03002893C8 /* Info.plist */,
+			);
+			path = TheBlockerTests;
+			sourceTree = "<group>";
+		};
+		494A80EE25B24C03002893C8 /* TheBlockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				494A80EF25B24C03002893C8 /* TheBlockerUITests.swift */,
+				494A80F125B24C03002893C8 /* Info.plist */,
+			);
+			path = TheBlockerUITests;
+			sourceTree = "<group>";
+		};
+		494A811225B25099002893C8 /* CallKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F9D25B60C6100D0C754 /* CallKitExtension.entitlements */,
+				494A811325B25099002893C8 /* CallDirectoryHandler.swift */,
+				494A811525B25099002893C8 /* Info.plist */,
+				49D36F9725B6068E00D0C754 /* CallKitRepository.swift */,
+			);
+			path = CallKitExtension;
+			sourceTree = "<group>";
+		};
+		494A812125B250BD002893C8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				49D36FF825B6A42E00D0C754 /* Aggregate */,
+				494A825B25B3D49B002893C8 /* BatchInsert */,
+				494A81A625B268B2002893C8 /* CRUD */,
+				494A818125B2683E002893C8 /* Fetch */,
+				494A812225B250D3002893C8 /* Stack.swift */,
+				494A812825B25120002893C8 /* Repository.swift */,
+				494A816425B25C65002893C8 /* ModelBridging.swift */,
+				494A816A25B25CC6002893C8 /* RepositoryPhoneNumber.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		494A812E25B251A7002893C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				494A80CA25B24C02002893C8 /* AppDelegate.swift */,
+				494A80CC25B24C02002893C8 /* SceneDelegate.swift */,
+				494A812F25B25204002893C8 /* BundleIdentifierProvider.swift */,
+				494A815125B25B50002893C8 /* AppState.swift */,
+				494A815725B25B58002893C8 /* AppAction.swift */,
+				494A82C225B50DA9002893C8 /* AppReducer.swift */,
+				494A82C825B50DCE002893C8 /* AppEnv.swift */,
+				494A82CE25B517DD002893C8 /* AppViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		494A813D25B257A8002893C8 /* PhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				494A813E25B257B7002893C8 /* PhoneNumber.swift */,
+				494A821D25B394B2002893C8 /* PhoneNumberFormState.swift */,
+				494A822325B39508002893C8 /* PhoneNumberFormAction.swift */,
+				494A822925B39726002893C8 /* PhoneNumberFormReducer.swift */,
+				494A82DC25B54C7C002893C8 /* PhoneNumberFormEnv.swift */,
+				494A82E825B554F6002893C8 /* PhoneNumberFormView.swift */,
+			);
+			path = PhoneNumber;
+			sourceTree = "<group>";
+		};
+		494A814425B25A7C002893C8 /* PhoneNumberList */ = {
+			isa = PBXGroup;
+			children = (
+				494A814525B25B24002893C8 /* PhoneNumberListState.swift */,
+				494A814B25B25B2E002893C8 /* PhoneNumberListAction.swift */,
+				494A829D25B4F9C5002893C8 /* PhoneNumberListReducer.swift */,
+				494A82A325B4FA19002893C8 /* PhoneNumberListEnv.swift */,
+				494A82AF25B4FD0C002893C8 /* PhoneNumberListView.swift */,
+				49D36FEE25B6943F00D0C754 /* PhoneNumberListCellView.swift */,
+				49D36FE825B6910C00D0C754 /* PhoneNumberListController.swift */,
+			);
+			path = PhoneNumberList;
+			sourceTree = "<group>";
+		};
+		494A817425B26743002893C8 /* BulkGen */ = {
+			isa = PBXGroup;
+			children = (
+				494A817525B26751002893C8 /* BulkGenState.swift */,
+				494A817B25B26778002893C8 /* BulkGenAction.swift */,
+				494A828525B4EB70002893C8 /* BulkGenReducer.swift */,
+				494A828B25B4EBA1002893C8 /* BulkGenEnv.swift */,
+				494A82A925B4FB74002893C8 /* BulkGenView.swift */,
+				494A823725B39CD8002893C8 /* PhoneNumberGenerator.swift */,
+				494A825125B3D0B0002893C8 /* PhoneNumberGenerator+Effect.swift */,
+				494A824B25B3D055002893C8 /* PhoneNumberGeneratorClient+Effect.swift */,
+				494A827725B4A74C002893C8 /* PhoneNumberGenerator+RepositoryClient.swift */,
+			);
+			path = BulkGen;
+			sourceTree = "<group>";
+		};
+		494A818125B2683E002893C8 /* Fetch */ = {
+			isa = PBXGroup;
+			children = (
+				494A818225B2684B002893C8 /* FetchRepository.swift */,
+				494A81FF25B37811002893C8 /* FetchRepository+Subscription.swift */,
+				494A820F25B3882F002893C8 /* FetchRepository+Effect.swift */,
+				494A818825B26857002893C8 /* FetchRepositoryClient.swift */,
+				494A820925B387C8002893C8 /* FetchRepositoryClient+Effect.swift */,
+				494A818E25B26861002893C8 /* FetchRepositoryState.swift */,
+				494A819425B2686B002893C8 /* FetchRepositoryAction.swift */,
+				494A819A25B2687D002893C8 /* FetchRepositoryReducer.swift */,
+				494A81A025B26885002893C8 /* FetchRepositoryEnv.swift */,
+				494A81F325B35581002893C8 /* FetchRequest.swift */,
+				494A81F925B35588002893C8 /* FetchResponse.swift */,
+				494A82B525B4FF67002893C8 /* LazyFetchView.swift */,
+			);
+			path = Fetch;
+			sourceTree = "<group>";
+		};
+		494A81A625B268B2002893C8 /* CRUD */ = {
+			isa = PBXGroup;
+			children = (
+				494A81A725B268C4002893C8 /* CRUDRepository.swift */,
+				494A81DF25B3453C002893C8 /* CRUDRepository+Effect.swift */,
+				494A81AD25B268D0002893C8 /* CRUDRepositoryClient.swift */,
+				494A81E925B34A36002893C8 /* CRUDRepositoryClient+Effect.swift */,
+				494A81C525B2691D002893C8 /* CRUDRepositoryAction.swift */,
+				494A81B925B268E8002893C8 /* CRUDRepositoryReducer.swift */,
+				494A81BF25B268F1002893C8 /* CRUDRepositoryEnv.swift */,
+				494A82E225B55406002893C8 /* CRUDRepositoryState.swift */,
+			);
+			path = CRUD;
+			sourceTree = "<group>";
+		};
+		494A825B25B3D49B002893C8 /* BatchInsert */ = {
+			isa = PBXGroup;
+			children = (
+				494A825C25B3D4B4002893C8 /* BatchInsertRepository.swift */,
+				494A826225B3E36A002893C8 /* BatchInsertRepositoryClient.swift */,
+			);
+			path = BatchInsert;
+			sourceTree = "<group>";
+		};
+		494A826C25B485E3002893C8 /* BulkGen */ = {
+			isa = PBXGroup;
+			children = (
+				494A826D25B48601002893C8 /* PhoneNumberGeneratorTests.swift */,
+			);
+			path = BulkGen;
+			sourceTree = "<group>";
+		};
+		4996CDAE25B78772006BC8D2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4996CDB925B7896C006BC8D2 /* Fetch */,
+				4996CDAF25B78790006BC8D2 /* RepositoryStack.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4996CDB925B7896C006BC8D2 /* Fetch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fetch;
+			sourceTree = "<group>";
+		};
+		49D36FA725B61B4500D0C754 /* CallKitService */ = {
+			isa = PBXGroup;
+			children = (
+				49D36FA825B61BB200D0C754 /* CallKitService.swift */,
+				4996CD9025B77D15006BC8D2 /* CallKitState.swift */,
+				4996CD9625B77D1C006BC8D2 /* CallKitAction.swift */,
+				4996CD9C25B77D2B006BC8D2 /* CallKitReducer.swift */,
+				4996CDA225B77D33006BC8D2 /* CallKitEnv.swift */,
+				4996CDA825B78155006BC8D2 /* CallKitEnabledStatusView.swift */,
+			);
+			path = CallKitService;
+			sourceTree = "<group>";
+		};
+		49D36FC325B6837200D0C754 /* AddNew */ = {
+			isa = PBXGroup;
+			children = (
+				49D36FC425B6839300D0C754 /* AddNewState.swift */,
+				49D36FCA25B6839800D0C754 /* AddNewAction.swift */,
+				49D36FD025B683A600D0C754 /* AddNewReducer.swift */,
+				49D36FD625B683AB00D0C754 /* AddNewEnv.swift */,
+				49D36FDC25B683BC00D0C754 /* AddNewView.swift */,
+				49D36FE225B6863400D0C754 /* AddNewViewController.swift */,
+			);
+			path = AddNew;
+			sourceTree = "<group>";
+		};
+		49D36FF825B6A42E00D0C754 /* Aggregate */ = {
+			isa = PBXGroup;
+			children = (
+				49D36FF925B6A43C00D0C754 /* AggregateRepository.swift */,
+				49D36FFF25B6A68600D0C754 /* AggregateRepository+Effect.swift */,
+				49D3700525B6A70D00D0C754 /* AggregateRepositoryClient+Effect.swift */,
+				49D3700B25B6A7B000D0C754 /* AggregateRepositoryState.swift */,
+				49D3701125B6A7DC00D0C754 /* AggregateRepositoryAction.swift */,
+				49D3701D25B6A8D200D0C754 /* AggregateRepositoryReducer.swift */,
+				49D3701725B6A88E00D0C754 /* AggregateRepositoryEnv.swift */,
+			);
+			path = Aggregate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		494A80C625B24C02002893C8 /* TheBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494A80F425B24C03002893C8 /* Build configuration list for PBXNativeTarget "TheBlocker" */;
+			buildPhases = (
+				494A80C325B24C02002893C8 /* Sources */,
+				494A810525B24D8A002893C8 /* ShellScript */,
+				494A80C425B24C02002893C8 /* Frameworks */,
+				494A80C525B24C02002893C8 /* Resources */,
+				494A811C25B25099002893C8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				494A811725B25099002893C8 /* PBXTargetDependency */,
+			);
+			name = TheBlocker;
+			packageProductDependencies = (
+				494A815E25B25C0D002893C8 /* ComposableArchitecture */,
+			);
+			productName = TheBlocker;
+			productReference = 494A80C725B24C02002893C8 /* TheBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		494A80DF25B24C03002893C8 /* TheBlockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494A80F725B24C03002893C8 /* Build configuration list for PBXNativeTarget "TheBlockerTests" */;
+			buildPhases = (
+				494A80DC25B24C03002893C8 /* Sources */,
+				494A80DD25B24C03002893C8 /* Frameworks */,
+				494A80DE25B24C03002893C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				494A80E225B24C03002893C8 /* PBXTargetDependency */,
+			);
+			name = TheBlockerTests;
+			productName = TheBlockerTests;
+			productReference = 494A80E025B24C03002893C8 /* TheBlockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		494A80EA25B24C03002893C8 /* TheBlockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494A80FA25B24C03002893C8 /* Build configuration list for PBXNativeTarget "TheBlockerUITests" */;
+			buildPhases = (
+				494A80E725B24C03002893C8 /* Sources */,
+				494A80E825B24C03002893C8 /* Frameworks */,
+				494A80E925B24C03002893C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				494A80ED25B24C03002893C8 /* PBXTargetDependency */,
+			);
+			name = TheBlockerUITests;
+			productName = TheBlockerUITests;
+			productReference = 494A80EB25B24C03002893C8 /* TheBlockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		494A811025B25099002893C8 /* CallKitExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494A811925B25099002893C8 /* Build configuration list for PBXNativeTarget "CallKitExtension" */;
+			buildPhases = (
+				494A810D25B25099002893C8 /* Sources */,
+				494A810E25B25099002893C8 /* Frameworks */,
+				494A810F25B25099002893C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallKitExtension;
+			productName = CallKitExtension;
+			productReference = 494A811125B25099002893C8 /* CallKitExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		494A80BF25B24C01002893C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					494A80C625B24C02002893C8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					494A80DF25B24C03002893C8 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 494A80C625B24C02002893C8;
+					};
+					494A80EA25B24C03002893C8 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 494A80C625B24C02002893C8;
+					};
+					494A811025B25099002893C8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 494A80C225B24C01002893C8 /* Build configuration list for PBXProject "TheBlocker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 494A80BE25B24C01002893C8;
+			packageReferences = (
+				494A815D25B25C0D002893C8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 494A80C825B24C02002893C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				494A80C625B24C02002893C8 /* TheBlocker */,
+				494A80DF25B24C03002893C8 /* TheBlockerTests */,
+				494A80EA25B24C03002893C8 /* TheBlockerUITests */,
+				494A811025B25099002893C8 /* CallKitExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		494A80C525B24C02002893C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494A80DA25B24C03002893C8 /* LaunchScreen.storyboard in Resources */,
+				494A80D725B24C03002893C8 /* Preview Assets.xcassets in Resources */,
+				494A80D425B24C03002893C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A80DE25B24C03002893C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A80E925B24C03002893C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A810F25B25099002893C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		494A810525B24D8A002893C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		494A80C325B24C02002893C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494A81F425B35581002893C8 /* FetchRequest.swift in Sources */,
+				494A80CB25B24C02002893C8 /* AppDelegate.swift in Sources */,
+				494A817625B26751002893C8 /* BulkGenState.swift in Sources */,
+				494A82B625B4FF67002893C8 /* LazyFetchView.swift in Sources */,
+				49D36FE925B6910C00D0C754 /* PhoneNumberListController.swift in Sources */,
+				494A82E325B55406002893C8 /* CRUDRepositoryState.swift in Sources */,
+				494A822425B39508002893C8 /* PhoneNumberFormAction.swift in Sources */,
+				49D36FD725B683AB00D0C754 /* AddNewEnv.swift in Sources */,
+				494A81AE25B268D0002893C8 /* CRUDRepositoryClient.swift in Sources */,
+				494A817C25B26778002893C8 /* BulkGenAction.swift in Sources */,
+				49D3700025B6A68600D0C754 /* AggregateRepository+Effect.swift in Sources */,
+				49D36FA925B61BB200D0C754 /* CallKitService.swift in Sources */,
+				494A815825B25B58002893C8 /* AppAction.swift in Sources */,
+				4927ADF525B6434400E55B08 /* UserDefaultRepository.swift in Sources */,
+				494A813025B25204002893C8 /* BundleIdentifierProvider.swift in Sources */,
+				494A818325B2684B002893C8 /* FetchRepository.swift in Sources */,
+				494A82A425B4FA1A002893C8 /* PhoneNumberListEnv.swift in Sources */,
+				494A812325B250D3002893C8 /* Stack.swift in Sources */,
+				494A819B25B2687D002893C8 /* FetchRepositoryReducer.swift in Sources */,
+				494A81A125B26885002893C8 /* FetchRepositoryEnv.swift in Sources */,
+				49D36FFA25B6A43C00D0C754 /* AggregateRepository.swift in Sources */,
+				494A818F25B26861002893C8 /* FetchRepositoryState.swift in Sources */,
+				494A828625B4EB70002893C8 /* BulkGenReducer.swift in Sources */,
+				4996CD9125B77D15006BC8D2 /* CallKitState.swift in Sources */,
+				494A80CD25B24C02002893C8 /* SceneDelegate.swift in Sources */,
+				494A827825B4A74C002893C8 /* PhoneNumberGenerator+RepositoryClient.swift in Sources */,
+				49D3700C25B6A7B000D0C754 /* AggregateRepositoryState.swift in Sources */,
+				494A81BA25B268E8002893C8 /* CRUDRepositoryReducer.swift in Sources */,
+				494A825225B3D0B0002893C8 /* PhoneNumberGenerator+Effect.swift in Sources */,
+				4996CD9D25B77D2B006BC8D2 /* CallKitReducer.swift in Sources */,
+				494A826325B3E36A002893C8 /* BatchInsertRepositoryClient.swift in Sources */,
+				494A82E925B554F6002893C8 /* PhoneNumberFormView.swift in Sources */,
+				494A828C25B4EBA1002893C8 /* BulkGenEnv.swift in Sources */,
+				494A822A25B39726002893C8 /* PhoneNumberFormReducer.swift in Sources */,
+				49D36FC525B6839300D0C754 /* AddNewState.swift in Sources */,
+				4927AE0425B6455D00E55B08 /* DefaultName.swift in Sources */,
+				494A81FA25B35588002893C8 /* FetchResponse.swift in Sources */,
+				494A82CF25B517DD002893C8 /* AppViewController.swift in Sources */,
+				494A82DD25B54C7C002893C8 /* PhoneNumberFormEnv.swift in Sources */,
+				494A825D25B3D4B4002893C8 /* BatchInsertRepository.swift in Sources */,
+				494A823825B39CD8002893C8 /* PhoneNumberGenerator.swift in Sources */,
+				49D3700625B6A70D00D0C754 /* AggregateRepositoryClient+Effect.swift in Sources */,
+				49D3701225B6A7DC00D0C754 /* AggregateRepositoryAction.swift in Sources */,
+				494A820A25B387C8002893C8 /* FetchRepositoryClient+Effect.swift in Sources */,
+				494A81C625B2691D002893C8 /* CRUDRepositoryAction.swift in Sources */,
+				494A80D225B24C02002893C8 /* TheBlocker.xcdatamodeld in Sources */,
+				494A814C25B25B2E002893C8 /* PhoneNumberListAction.swift in Sources */,
+				494A829E25B4F9C5002893C8 /* PhoneNumberListReducer.swift in Sources */,
+				494A82B025B4FD0C002893C8 /* PhoneNumberListView.swift in Sources */,
+				494A815225B25B50002893C8 /* AppState.swift in Sources */,
+				494A820025B37811002893C8 /* FetchRepository+Subscription.swift in Sources */,
+				494A814625B25B24002893C8 /* PhoneNumberListState.swift in Sources */,
+				4996CDA325B77D33006BC8D2 /* CallKitEnv.swift in Sources */,
+				4927AE0F25B649C900E55B08 /* UserDefaultsRepositoryClient.swift in Sources */,
+				494A81EA25B34A36002893C8 /* CRUDRepositoryClient+Effect.swift in Sources */,
+				494A819525B2686B002893C8 /* FetchRepositoryAction.swift in Sources */,
+				494A81E025B3453C002893C8 /* CRUDRepository+Effect.swift in Sources */,
+				49D36FEF25B6943F00D0C754 /* PhoneNumberListCellView.swift in Sources */,
+				49D36FCB25B6839800D0C754 /* AddNewAction.swift in Sources */,
+				4996CDA925B78155006BC8D2 /* CallKitEnabledStatusView.swift in Sources */,
+				494A81A825B268C4002893C8 /* CRUDRepository.swift in Sources */,
+				494A812925B25120002893C8 /* Repository.swift in Sources */,
+				49D36FD125B683A600D0C754 /* AddNewReducer.swift in Sources */,
+				494A816B25B25CC6002893C8 /* RepositoryPhoneNumber.swift in Sources */,
+				494A821025B3882F002893C8 /* FetchRepository+Effect.swift in Sources */,
+				49D36FE325B6863400D0C754 /* AddNewViewController.swift in Sources */,
+				49D3701825B6A88E00D0C754 /* AggregateRepositoryEnv.swift in Sources */,
+				494A821E25B394B2002893C8 /* PhoneNumberFormState.swift in Sources */,
+				494A824C25B3D055002893C8 /* PhoneNumberGeneratorClient+Effect.swift in Sources */,
+				494A82C325B50DA9002893C8 /* AppReducer.swift in Sources */,
+				494A818925B26857002893C8 /* FetchRepositoryClient.swift in Sources */,
+				4996CD9725B77D1C006BC8D2 /* CallKitAction.swift in Sources */,
+				494A813F25B257B7002893C8 /* PhoneNumber.swift in Sources */,
+				494A816525B25C65002893C8 /* ModelBridging.swift in Sources */,
+				49D36FDD25B683BC00D0C754 /* AddNewView.swift in Sources */,
+				494A81C025B268F1002893C8 /* CRUDRepositoryEnv.swift in Sources */,
+				494A82AA25B4FB74002893C8 /* BulkGenView.swift in Sources */,
+				49D3701E25B6A8D200D0C754 /* AggregateRepositoryReducer.swift in Sources */,
+				494A82C925B50DCE002893C8 /* AppEnv.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A80DC25B24C03002893C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494A80E525B24C03002893C8 /* TheBlockerTests.swift in Sources */,
+				494A826E25B48601002893C8 /* PhoneNumberGeneratorTests.swift in Sources */,
+				4996CDB025B78790006BC8D2 /* RepositoryStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A80E725B24C03002893C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494A80F025B24C03002893C8 /* TheBlockerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A810D25B25099002893C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D36F8325B602DF00D0C754 /* FetchRequest.swift in Sources */,
+				49D36F6A25B602A600D0C754 /* FetchRepositoryClient.swift in Sources */,
+				4927AE0925B6458000E55B08 /* DefaultName.swift in Sources */,
+				49D36F7E25B602DB00D0C754 /* PhoneNumber.swift in Sources */,
+				4927ADFE25B6440600E55B08 /* UserDefaultRepository.swift in Sources */,
+				49D36F7925B602D500D0C754 /* RepositoryPhoneNumber.swift in Sources */,
+				49D36FBA25B62F9800D0C754 /* TheBlocker.xcdatamodeld in Sources */,
+				49D36FA225B60CAB00D0C754 /* BundleIdentifierProvider.swift in Sources */,
+				49D36F6525B6029B00D0C754 /* FetchRepository.swift in Sources */,
+				49D36F9225B603BF00D0C754 /* Stack.swift in Sources */,
+				49D36F8825B602E300D0C754 /* FetchResponse.swift in Sources */,
+				4927AE1425B64C5E00E55B08 /* UserDefaultsRepositoryClient.swift in Sources */,
+				494A811425B25099002893C8 /* CallDirectoryHandler.swift in Sources */,
+				49D36F6F25B602C400D0C754 /* Repository.swift in Sources */,
+				49D36F7425B602CB00D0C754 /* ModelBridging.swift in Sources */,
+				49D36F9825B6068E00D0C754 /* CallKitRepository.swift in Sources */,
+				49D36F8D25B6030800D0C754 /* FetchRepository+Subscription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		494A80E225B24C03002893C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 494A80C625B24C02002893C8 /* TheBlocker */;
+			targetProxy = 494A80E125B24C03002893C8 /* PBXContainerItemProxy */;
+		};
+		494A80ED25B24C03002893C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 494A80C625B24C02002893C8 /* TheBlocker */;
+			targetProxy = 494A80EC25B24C03002893C8 /* PBXContainerItemProxy */;
+		};
+		494A811725B25099002893C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 494A811025B25099002893C8 /* CallKitExtension */;
+			targetProxy = 494A811625B25099002893C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		494A80D825B24C03002893C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				494A80D925B24C03002893C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		494A80F225B24C03002893C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		494A80F325B24C03002893C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		494A80F525B24C03002893C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheBlocker/TheBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TheBlocker/Preview Content\"";
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TheBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		494A80F625B24C03002893C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheBlocker/TheBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TheBlocker/Preview Content\"";
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TheBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		494A80F825B24C03002893C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				INFOPLIST_FILE = TheBlockerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBlocker.app/TheBlocker";
+			};
+			name = Debug;
+		};
+		494A80F925B24C03002893C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				INFOPLIST_FILE = TheBlockerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBlocker.app/TheBlocker";
+			};
+			name = Release;
+		};
+		494A80FB25B24C03002893C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				INFOPLIST_FILE = TheBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheBlocker;
+			};
+			name = Debug;
+		};
+		494A80FC25B24C03002893C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				INFOPLIST_FILE = TheBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheBlocker;
+			};
+			name = Release;
+		};
+		494A811A25B25099002893C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallKitExtension/CallKitExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				INFOPLIST_FILE = CallKitExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlocker.CallKitExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		494A811B25B25099002893C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallKitExtension/CallKitExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH7465K9GM;
+				INFOPLIST_FILE = CallKitExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roanwell.TheBlocker.CallKitExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		494A80C225B24C01002893C8 /* Build configuration list for PBXProject "TheBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A80F225B24C03002893C8 /* Debug */,
+				494A80F325B24C03002893C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494A80F425B24C03002893C8 /* Build configuration list for PBXNativeTarget "TheBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A80F525B24C03002893C8 /* Debug */,
+				494A80F625B24C03002893C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494A80F725B24C03002893C8 /* Build configuration list for PBXNativeTarget "TheBlockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A80F825B24C03002893C8 /* Debug */,
+				494A80F925B24C03002893C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494A80FA25B24C03002893C8 /* Build configuration list for PBXNativeTarget "TheBlockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A80FB25B24C03002893C8 /* Debug */,
+				494A80FC25B24C03002893C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494A811925B25099002893C8 /* Build configuration list for PBXNativeTarget "CallKitExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A811A25B25099002893C8 /* Debug */,
+				494A811B25B25099002893C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		494A815D25B25C0D002893C8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		494A815E25B25C0D002893C8 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494A815D25B25C0D002893C8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		494A80D025B24C02002893C8 /* TheBlocker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				494A80D125B24C02002893C8 /* TheBlocker.xcdatamodel */,
+			);
+			currentVersion = 494A80D125B24C02002893C8 /* TheBlocker.xcdatamodel */;
+			path = TheBlocker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 494A80BF25B24C01002893C8 /* Project object */;
+}
